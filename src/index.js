@@ -12,6 +12,14 @@ toggleThemeButton.addEventListener("click", () => {
   }
 });
 
+document.getElementById('theme-toggle-button').addEventListener('click', () => {
+  window.electron.toggleTheme();
+});
+
+window.electron.on('toggle-theme', () => {
+  toggleTheme();
+});
+
 // Charger le thème depuis localStorage au démarrage
 window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");

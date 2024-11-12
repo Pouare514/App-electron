@@ -4,3 +4,7 @@ const { contextBridge, ipcRenderer } = require('electron');
 contextBridge.exposeInMainWorld('electronAPI', {
   sendNotification: (message) => ipcRenderer.send('show-notification', message)
 });
+
+contextBridge.exposeInMainWorld('electron', {
+  toggleTheme: () => ipcRenderer.send('toggle-theme')
+});

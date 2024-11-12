@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 
 function createWindow() {
@@ -18,6 +18,13 @@ function createWindow() {
 
 // App prête à créer la fenêtre principale
 app.whenReady().then(createWindow);
+
+ipcMain.on('toggle-theme', (event) => {
+  const win = BrowserWindow.getFocusedWindow();
+  if (win) {
+    win.webContents.send('toggle-theme');
+  }
+});
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();

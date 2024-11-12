@@ -1,6 +1,13 @@
-// Sélection du bouton de bascule de thème
-const toggleThemeBtn = document.getElementById('toggle-theme');
+function toggleTheme() {
+  const body = document.body;
+  body.classList.toggle('dark-theme');
+  const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
+  localStorage.setItem('theme', theme);
+}
 
-toggleThemeBtn.addEventListener('click', () => {
-  document.body.classList.toggle('light-mode');
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  if (savedTheme === 'dark') {
+    document.body.classList.add('dark-theme');
+  }
 });
