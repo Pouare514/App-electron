@@ -32,9 +32,6 @@ Cette application Electron permet de basculer entre les thèmes sombre et clair.
     ```bash
     npm start
     ```
-2. Utilisez le bouton de bascule de thème pour changer entre les thèmes sombre et clair.
-3. Naviguez à travers le menu latéral pour accéder aux différentes sections.
-4. Interagissez avec les boutons pour voir les notifications.
 
 ## Structure du projet
 
@@ -45,7 +42,7 @@ Cette application Electron permet de basculer entre les thèmes sombre et clair.
 
 ## Contribuer
 
-Les contributions sont les bienvenues ! Veuillez soumettre une pull request ou ouvrir une issue pour discuter des changements que vous souhaitez apporter.
+Les contributions sont les bienvenues ! Veuillez soumettre une pull request ou ouvrir une issue pour discuter des changements que vous souhaitez apporter !! 
 
 ## Licence
 
