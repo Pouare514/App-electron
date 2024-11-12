@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keur keur ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barre de titre personnalisée -->
+    <header class="title-bar">
+        <div class="title">Mon Application Electron</div>
+        <div class="window-controls">
+            <!-- Bouton de bascule de thème -->
+            <button id="toggle-theme">🌙/☀️</button>
+            <button class="minimize">—</button>
+            <button class="maximize">🗖</button>
+            <button class="close">✕</button>
+        </div>
+    </header>
+
+    <!-- Conteneur principal avec menu latéral et zone de contenu -->
+    <div class="container">
+        <!-- Menu latéral pour la navigation -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Paramètres</a></li>
+                <li><a href="#">Profil</a></li>
+                <li><a href="#">Aide</a></li>
+            </ul>
+        </nav>
+
+        <!-- Zone de contenu principale -->
+        <main class="content">
+            <h1>Bienvenue dans l'Application Electron</h1>
+            <p>Ceci est la zone de contenu principale.</p>
+        </main>
+    </div>
+
+    <!-- Pied de page minimal -->
+    <footer class="footer">
+        <div class="status">Statut : Connecté</div>
+        <div class="copyright">&copy; Fait avec amour par Pouare ❤️</div>
+    </footer>
+
+    <!-- Script JavaScript pour basculer entre les thèmes sombre et clair -->
+    <script>
+        // Sélection du bouton de bascule de thème
+        const toggleThemeBtn = document.getElementById('toggle-theme');
+
+        toggleThemeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
+</body>
+</html>
