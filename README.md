@@ -1,4 +1,4 @@
-# Mon Application Electron
+# Layout Application Electron
 
 Cette application Electron permet de basculer entre les thèmes sombre et clair. Elle inclut également des boutons interactifs et une barre de titre personnalisée.
 
@@ -15,7 +15,7 @@ Cette application Electron permet de basculer entre les thèmes sombre et clair.
 
 1. Clonez le dépôt :
     ```bash
-    git clone https://github.com/votre-utilisateur/votre-repo.git
+    git clone https://github.com/Pouare514/App-electron.git
     ```
 2. Accédez au répertoire du projet :
     ```bash
