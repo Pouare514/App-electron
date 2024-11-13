@@ -1,49 +1,56 @@
-# Layout Application Electron
+# Keur Keur ❤️
 
-Cette application Electron permet de basculer entre les thèmes sombre et clair. Elle inclut également des boutons interactifs et une barre de titre personnalisée.
+Une application de bureau moderne construite avec Electron, offrant une interface utilisateur élégante avec support des thèmes clair/sombre et des fonctionnalités interactives.
 
-## Fonctionnalités
+## 🌟 Fonctionnalités
 
-- Bascule entre les thèmes sombre et clair
-- Barre de titre personnalisée avec contrôles de fenêtre
-- Menu latéral pour la navigation
-- Zone de contenu principale
-- Pied de page avec statut et copyright
-- Boutons interactifs avec notifications
+- 🎨 Thèmes clair et sombre
+- 🔔 Système de notifications avancé
+- ⚡ Performance optimisée
+- 📱 Interface responsive
+- ⌨️ Raccourcis clavier globaux
+- 🔒 Sécurité renforcée avec isolation du contexte
 
-## Installation
+## 🚀 Installation
 
 1. Clonez le dépôt :
-    ```bash
-    git clone https://github.com/Pouare514/App-electron.git
-    ```
-2. Accédez au répertoire du projet :
-    ```bash
-    cd votre-repo
-    ```
-3. Installez les dépendances :
-    ```bash
-    npm install
-    ```
+```bash
+git clone https://github.com/Pouare514/App-electron.git
+```
 
-## Utilisation
+Installez les dépendances :
+```bash
+cd keur-keur
+npm install
+```
 
-1. Démarrez l'application :
-    ```bash
-    npm start
-    ```
+Lancez l'application :
+```bash
+npm start
+```
 
-## Structure du projet
+🛠️ Scripts disponibles
+npm start - Lance l'application
+npm run dev - Lance l'application en mode développement
+npm test - Execute les tests
+npm run build:all - Compile l'application pour Windows, Mac et Linux
+npm run analyze - Analyse la taille du bundle
 
-- `src/index.html` : Le fichier HTML principal de l'application.
-- `src/styles.css` : Les styles CSS pour l'application.
-- `src/index.js` : Le script principal pour la gestion des thèmes et des boutons.
-- `src/toggle-theme.js` : Le script pour la bascule de thème.
+⌨️ Raccourcis clavier
+Ctrl + , - Ouvrir les paramètres
+Ctrl + R - Rafraîchir l'application
+Ctrl + Shift + I - Ouvrir les DevTools
+Ctrl + -/+ - Zoom -/+
+Ctrl + 0 - Réinitialiser le zoom
 
-## Contribuer
+🔒 Sécurité
+Isolation du contexte activée
+Intégration Node.js désactivée
+Sandbox activé
+Navigation externe restreinte
 
-Les contributions sont les bienvenues ! Veuillez soumettre une pull request ou ouvrir une issue pour discuter des changements que vous souhaitez apporter !! 
+📝 License
+MIT © Pouare514
 
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+🤝 Contribution
+Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
