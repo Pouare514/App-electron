@@ -44,10 +44,10 @@ Ctrl + -/+ - Zoom -/+
 Ctrl + 0 - Réinitialiser le zoom
 
 ## 🔒 Sécurité
-Isolation du contexte activée
-Intégration Node.js désactivée
-Sandbox activé
-Navigation externe restreinte
+- Isolation du contexte activée
+- Intégration Node.js désactivée
+- Sandbox activé
+- Navigation externe restreinte
 
 ## 📝 License
 MIT © Pouare514
