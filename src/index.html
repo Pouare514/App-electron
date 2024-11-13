@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keur keur ❤️</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Attendre le chargement complet du DOM -->
+    <script defer src="index.js"></script>
 </head>
 <body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
     <!-- Barre de titre personnalisée -->
     <header class="title-bar">
         <div class="title">Mon Application Electron</div>
@@ -19,20 +26,25 @@
         </div>
     </header>
 
+    <!-- Bouton menu mobile -->
+    <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+    </button>
+
     <!-- Conteneur principal avec menu latéral et zone de contenu -->
     <div class="container">
         <!-- Menu latéral pour la navigation -->
         <nav class="sidebar">
             <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Paramètres</a></li>
-                <li><a href="#">Profil</a></li>
-                <li><a href="#">Aide</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parametres.html">Paramètres</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="aide.html">Aide</a></li>
             </ul>
         </nav>
 
         <!-- Zone de contenu principale -->
-        <main class="content">
+        <main class="content" id="main-content">
             <h1>Bienvenue dans l'Application Electron</h1>
             <p>Ceci est la zone de contenu principale.</p>
         </main>
@@ -44,7 +56,15 @@
         <div class="copyright">&copy; Fait avec amour par Pouare ❤️</div>
     </footer>
 
-    <!-- Script JavaScript pour basculer entre les thèmes sombre et clair -->
-    <script src="index.js"></script>
+    <!-- Suppression du skip-link qui n'est pas nécessaire -->
+
+    <!-- Ajout d'un message de débogage -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM fully loaded');
+            // Masquer le loader une fois chargé
+            document.getElementById('loader').style.display = 'none';
+        });
+    </script>
 </body>
 </html>

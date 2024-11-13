@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paramètres - Keur keur ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Structure de base similaire à index.html -->
+    <div class="loader" id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="title-bar">
+        <div class="title">Paramètres</div>
+        <div class="window-controls">
+            <button id="toggle-theme">🌙/☀️</button>
+            <button class="minimize">—</button>
+            <button class="maximize">🗖</button>
+            <button class="close">✕</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parametres.html">Paramètres</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="aide.html">Aide</a></li>
+            </ul>
+        </nav>
+
+        <main class="content settings-content" id="main-content">
+            <div class="settings-grid">
+                <!-- Apparence -->
+                <section class="card settings-section">
+                    <h2>Apparence</h2>
+                    <div class="setting-item">
+                        <label for="theme-select">Thème</label>
+                        <select id="theme-select" class="input-field">
+                            <option value="system">Système</option>
+                            <option value="light">Clair</option>
+                            <option value="dark">Sombre</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label for="font-size">Taille de police</label>
+                        <input type="range" id="font-size" min="12" max="24" value="16" class="input-field">
+                    </div>
+                </section>
+
+                <!-- Notifications -->
+                <section class="card settings-section">
+                    <h2>Notifications</h2>
+                    <div class="setting-item">
+                        <label class="switch-label">
+                            <input type="checkbox" id="enable-notifications">
+                            Activer les notifications
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <label for="notification-duration">Durée d'affichage (sec)</label>
+                        <input type="number" id="notification-duration" value="3" min="1" max="10" class="input-field">
+                    </div>
+                </section>
+
+                <!-- Performance -->
+                <section class="card settings-section">
+                    <h2>Performance</h2>
+                    <div class="setting-item">
+                        <label class="switch-label">
+                            <input type="checkbox" id="enable-animations">
+                            Animations
+                        </label>
+                    </div>
+                    <div class="setting-item">
+                        <button id="clear-cache" class="button button-danger">Vider le cache</button>
+                    </div>
+                </section>
+
+                <!-- Raccourcis -->
+                <section class="card settings-section">
+                    <h2>Raccourcis clavier</h2>
+                    <div class="setting-item shortcuts-list">
+                        <div class="shortcut">
+                            <span>Ouvrir les paramètres</span>
+                            <kbd>Ctrl</kbd> + <kbd>,</kbd>
+                        </div>
+                        <div class="shortcut">
+                            <span>Rafraîchir</span>
+                            <kbd>Ctrl</kbd> + <kbd>R</kbd>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="parametres.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM fully loaded');
+            // Masquer le loader une fois chargé
+            document.getElementById('loader').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

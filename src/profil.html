@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Keur keur ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="title-bar">
+        <div class="title">Profil</div>
+        <div class="window-controls">
+            <button id="toggle-theme">🌙/☀️</button>
+            <button class="minimize">—</button>
+            <button class="maximize">🗖</button>
+            <button class="close">✕</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="parametres.html">Paramètres</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="aide.html">Aide</a></li>
+            </ul>
+        </nav>
+
+        <main class="content" id="main-content">
+            <div class="card profile-card">
+                <div class="profile-header">
+                    <img src="default-avatar.png" alt="Avatar" class="profile-avatar">
+                    <h1>Mon Profil</h1>
+                </div>
+                
+                <section class="profile-info">
+                    <div class="form-group">
+                        <label for="username">Nom d'utilisateur</label>
+                        <input type="text" id="username" class="input-field" value="Utilisateur">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="input-field" value="user@example.com">
+                    </div>
+
+                    <div class="button-group">
+                        <button class="button button-positive">Sauvegarder</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
