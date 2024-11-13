@@ -18,39 +18,39 @@ Une application de bureau moderne construite avec Electron, offrant une interfac
 git clone https://github.com/Pouare514/App-electron.git
 ```
 
-Installez les dépendances :
+## Installez les dépendances :
 ```bash
 cd keur-keur
 npm install
 ```
 
-Lancez l'application :
+## Lancez l'application :
 ```bash
 npm start
 ```
 
-🛠️ Scripts disponibles
+## 🛠️ Scripts disponibles
 npm start - Lance l'application
 npm run dev - Lance l'application en mode développement
 npm test - Execute les tests
 npm run build:all - Compile l'application pour Windows, Mac et Linux
 npm run analyze - Analyse la taille du bundle
 
-⌨️ Raccourcis clavier
+## ⌨️ Raccourcis clavier
 Ctrl + , - Ouvrir les paramètres
 Ctrl + R - Rafraîchir l'application
 Ctrl + Shift + I - Ouvrir les DevTools
 Ctrl + -/+ - Zoom -/+
 Ctrl + 0 - Réinitialiser le zoom
 
-🔒 Sécurité
+## 🔒 Sécurité
 Isolation du contexte activée
 Intégration Node.js désactivée
 Sandbox activé
 Navigation externe restreinte
 
-📝 License
+## 📝 License
 MIT © Pouare514
 
-🤝 Contribution
+## 🤝 Contribution
 Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou une pull request.
