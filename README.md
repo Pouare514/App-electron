@@ -30,18 +30,18 @@ npm start
 ```
 
 ## 🛠️ Scripts disponibles
-npm start - Lance l'application
-npm run dev - Lance l'application en mode développement
-npm test - Execute les tests
-npm run build:all - Compile l'application pour Windows, Mac et Linux
-npm run analyze - Analyse la taille du bundle
+- npm start - Lance l'application
+- npm run dev - Lance l'application en mode développement
+- npm test - Execute les tests
+- npm run build:all - Compile l'application pour Windows, Mac et Linux
+- npm run analyze - Analyse la taille du bundle
 
 ## ⌨️ Raccourcis clavier
-Ctrl + , - Ouvrir les paramètres
-Ctrl + R - Rafraîchir l'application
-Ctrl + Shift + I - Ouvrir les DevTools
-Ctrl + -/+ - Zoom -/+
-Ctrl + 0 - Réinitialiser le zoom
+- Ctrl + , - Ouvrir les paramètres
+- Ctrl + R - Rafraîchir l'application
+- Ctrl + Shift + I - Ouvrir les DevTools
+- Ctrl + -/+ - Zoom -/+
+- Ctrl + 0 - Réinitialiser le zoom
 
 ## 🔒 Sécurité
 - Isolation du contexte activée
